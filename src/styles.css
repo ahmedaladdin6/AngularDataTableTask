@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import'@angular/material/prebuilt-themes/deeppurple-amber.css';
+.toolbar{
+    background-color: greenyellow;
+    border-radius: 10px;
+    color:white;
+    
+}
+.toolbar-spacer{
+    flex: 1 1 auto;
+}

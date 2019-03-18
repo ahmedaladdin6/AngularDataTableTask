@@ -1,0 +1,40 @@
+<!---         popup       -->
+<mat-card-header>
+  <mat-toolbar class="toolbar">
+    <mat-card-title> Contact Informtion</mat-card-title>
+    <span class="toolbar-spacer"></span>
+    <mat-icon (click)='onNoClick()'>cancel</mat-icon>
+  </mat-toolbar>
+</mat-card-header>
+<mat-card-content>
+  <div class="container">
+    <form [formGroup]="contactForm"(submit)='onSubmit()'>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-6">
+              <label>first name</label>
+              <input type="text" formControlName='FirstName' class="form-control" >
+          </div>
+          <div class="col-md-6">
+              <label>last name</label>
+              <input type="text" formControlName='LastName' class="form-control">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label>contct number</label>
+                <input type="text" formControlName='Contact' class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label>email</label>
+                <input type="text" formControlName='Email' class="form-control">
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <button type='submit' class="btn btn-success">save</button>
+      </div>
+    </form>
+    </div>
+</mat-card-content>
+
